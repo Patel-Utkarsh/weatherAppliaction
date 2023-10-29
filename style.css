@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Fjalla One';
+}
+
+.wrapper{
+    background-color: #ebebeb;
+    
+}
+.navBar{
+    height: 70px;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.navChild{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+}
+
+.t{
+    width: 40%;
+    display: flex;
+}
+
+.searchButton{
+    border: transparent;
+    background:transparent;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+input{
+    width: 80%;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.logoHeading{
+    margin-top: 2px;
+}
+
+.heroClass{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+
+
+}
+
+.tempSection{
+    padding-top: 70px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: flex-start;
+   
+   
+
+}
+
+.divBlock{
+    height: 120px;
+    width: 46%;
+    border: 1px yellow solid;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding-top: 5px;
+    -webkit-box-shadow: 7px 10px 21px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 10px 21px -17px rgba(0,0,0,0.75);
+box-shadow: 7px 10px 21px -17px rgba(0,0,0,0.75);
+background-color: whitesmoke;
+
+}
+ h2{
+    color: #407bff;
+    
+ 
+
+}
+
+.cityName{
+
+    font-size: 30px;
+
+  
+
+}
+
+
+#info{
+    border: transparent;
+    background: transparent;
+    box-shadow: none;
+
+}
+
+
+
+.tempSection h1{
+    color: black;
+}
+
+.tempContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.humidContent{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.precContent{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.cloudContent{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.windContent{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.uvContent{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.text{
+    padding-top: 13px;
+    margin-left: -5px;
+}
+
+.logoClass{
+    display: flex;
+}
+
+.errorClass {
+ 
+    justify-content: center;
+    display: none;
+}
+
+.errorClass h1{
+    color: black;
+
+}
+
+.errorDialog{
+    display: flex;
+    align-items: center;
+
+}
+
+.grantAccess{
+  
+    display: none;
+}
+
+.grantAccess h1{
+    color: black;
+    font-size: 30px;
+}
+
+.grantDialogClass{
+    display: flex;
+   
+    align-items: center;
+
+    
+}
+
+.grantbuttonclass{
+    display: flex;
+    justify-content: center;
+
+}
+
+.grantbuttonclass button {
+    height: 40px;
+    width: 200px;
+    background-color: #9c7af2;
+    color: white;
+    font-size: 15px;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
+
+body{
+    position: relative;
+
+}
+
+.loaderclass{
+    height: 100vh;
+    width: 100vw;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #00000088;
+    backdrop-filter: blur(5px);
+    visibility :hidden;
+
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  
+    border-radius: 50%;
+   
+    background: currentColor;
+    box-shadow: 32px 0 , -32px 0 ,  64px 0;
+    z-index: 2;
+    filter: blur(8%);
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+
+
+  }
+  
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background : #9c7af2;
+    animation: move 3s linear infinite alternate;
+  }
+  
+  @keyframes move {
+    0% , 5%{
+      left: -32px;
+      width: 16px;
+    }
+    15% , 20%{
+      left: -32px;
+      width: 48px;
+    }
+    30% , 35%{
+      left: 0px;
+      width: 16px;
+    }
+    45% , 50%{
+      left: 0px;
+      width: 48px;
+    }
+    60% , 65%{
+      left: 32px;
+      width: 16px;
+    }
+  
+    75% , 80% {
+      left: 32px;
+      width: 48px;
+    }
+    95%, 100% {
+      left: 64px;
+      width: 16px;
+    }
+}
+
+::placeholder{
+    padding-left: 8px;
+}
+
+
+@media (max-width : 550px) {
+    .logoClass img{
+       height: 30px;
+    }
+
+    .logoClass h1{
+        font-size: 20px;
+
+    }
+
+    .logoClass{
+        margin-top: 5px;
+    }
+
+   .t{
+    width: 50%;
+   
+    margin-top: -2px;
+   }
+
+   .search{
+    width: 100%;
+   }
+
+   .tempSection{
+    padding-top: 30px;
+   }
+
+   .logoHeading{
+    margin-top: 4px;
+   }
+
+
+}
+
+@media (max-width : 768px) {
+    .navChild{
+        width: 80%;
+       
+        
+    }
+
+    .logoImg{
+        height: 35px;
+    }
+
+    .logoHeading{
+        font-size: 30px;
+    }
+    
+    .heroImg{
+        display: none;
+    }
+
+    .tempSection{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .divBlock{
+        width: 100%;
+    }
+
+    .grantAccess{
+        flex-direction: column;
+    }
+
+    .grantDialogClass{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    
+        
+    }
+
+    .grantbuttonclass{
+        margin-top: 30px;
+    }
+
+    .grantImg{
+        height: 400px;
+       
+    }
+
+    .grantText{
+        text-align: center;
+    }
+
+    .grantImgClass{
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .grantbuttonclass button {
+  
+        width: 250px;
+        height: 45px;
+      
+       
+    }
+
+    .errorClassImg{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .errorClass{
+        flex-direction: column;
+        overflow-y: hidden;
+     
+    }
+
+    .errorDialog{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+
